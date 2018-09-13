@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int gcd(int x, int y){
+
+if(y!=0)
+	return gcd(y, x%y);
+	else
+	return x;
+}
+
+ int main()
+{
+	int x,y;
+    cout<<"Enter the first number: "<<endl;
+	cin>>x;
+	cout<<"Enter the seccond number: "<<endl;
+	cin>>y;
+	cout<<"the greatest common factor of "<< x << " and "<< y << " is: "<<endl;
+	cout<<gcd(x,y);
+	return 0;
+}
